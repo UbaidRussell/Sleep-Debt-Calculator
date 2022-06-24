@@ -24,10 +24,7 @@ function getSleepHours(day){
   }
 }
 
-function getActualSleepHours(){
-  var sum = getSleepHours('sunday') + getSleepHours('monday') + getSleepHours('tuesday') + getSleepHours('wednesday') + getSleepHours('thursday') + getSleepHours('friday') + getSleepHours('saturday')
-    return sum;
-}
+const getActualSleepHours = () => getSleepHours('sunday') + getSleepHours('monday') + getSleepHours('tuesday') + getSleepHours('wednesday') + getSleepHours('thursday') + getSleepHours('friday') + getSleepHours('saturday');
 
-console.log(getSleepHours('monday'));
 console.log(getActualSleepHours());
+console.log(getSleepHours('monday'));
