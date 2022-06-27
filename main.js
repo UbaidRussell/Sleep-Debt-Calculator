@@ -1,3 +1,4 @@
+//random for testing
 function getSleepHours(day){
   switch (day){
     case 'sunday':
@@ -23,15 +24,16 @@ function getSleepHours(day){
     break;
   }
 }
-
+//Gets ideal sleep hours
 const getIdealSleepHours = () =>{
   const idealHours = 8;
   return idealHours * 7;
 }
 
-
+//gets actual sleep hours
 const getActualSleepHours = () => getSleepHours('sunday') + getSleepHours('monday') + getSleepHours('tuesday') + getSleepHours('wednesday') + getSleepHours('thursday') + getSleepHours('friday') + getSleepHours('saturday');
 
+//Test
 console.log(getActualSleepHours());
 console.log(getSleepHours('monday'));
 console.log(getIdealSleepHours);
