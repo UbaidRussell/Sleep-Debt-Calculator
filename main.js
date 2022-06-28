@@ -28,12 +28,20 @@ function getSleepHours(day){
 
 //gets actual sleep hours
 const getActualSleepHours = () => getSleepHours('sunday') + getSleepHours('monday') + getSleepHours('tuesday') + getSleepHours('wednesday') + getSleepHours('thursday') + getSleepHours('friday') + getSleepHours('saturday');
-
 //Gets ideal sleep hours
 const getIdealSleepHours = () =>{
   const idealHours = 8;
   return idealHours * 7;
 }
+
+//This function calcauloates our sleep debt
+const calculateSleepDebt = () =>{
+  let actualSleepHours = getActualSleepHours();
+  let idealSleepHours = getIdealSleepHours();
+}
+
+
+
 
 //Test
 console.log(getActualSleepHours());
