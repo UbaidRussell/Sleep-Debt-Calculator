@@ -31,8 +31,8 @@ const getIdealSleepHours = () =>{
 }
 
 const calculateSleepDebt = () => {
-  actualSleepHours = getActualSleepHours()
-  idealSleepHours = getIdealSleepHours()
+  let actualSleepHours = getActualSleepHours()
+  let idealSleepHours = getIdealSleepHours()
 
   if (actualSleepHours === idealSleepHours){
     console.log(`You have gotten the perfect amount of sleep hours.`)
