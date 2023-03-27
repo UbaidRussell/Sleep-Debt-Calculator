@@ -29,7 +29,7 @@ const getIdealSleepHours = () =>{
   let idealHours = 8;
   return idealHours * 7;
 }
-
+//Main caller function to do the math
 const calculateSleepDebt = () => {
   let actualSleepHours = getActualSleepHours()
   let idealSleepHours = getIdealSleepHours()
@@ -41,7 +41,6 @@ const calculateSleepDebt = () => {
   } else if (actualSleepHours < idealSleepHours){
     console.log(`You have gotten ${idealSleepHours - actualSleepHours} hours less sleep than your ideal hours and should think about getting some more.`)
   }
-
 
 }
 
