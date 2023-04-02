@@ -44,4 +44,5 @@ const calculateSleepDebt = () => {
 
 }
 
+//Call the function calculateSleepDebt() to run the program
 calculateSleepDebt()
